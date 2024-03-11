@@ -1,0 +1,32 @@
+package com.jbk.BookStore.Controller;
+
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.PutMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.jbk.BookStore.Service.BookStoreSer;
+import com.jbk.BookStore.entity.BookStore;;
+
+@RestController
+@RequestMapping("/apisave")
+public class BookStoreCon {
+
+	BookStoreSer service;
+	
+	@PostMapping("/savedata")
+	public String saveRecord(@RequestBody BookStore BS) {
+		
+		String msg= service.insertdata(BS);
+		
+		return msg;
+		
+	}
+	@PutMapping("/update/{id}")
+	public String update(@PathVariable int id, BookStore BS) {
+		String msg=service.updatedata(id, BS);
+		return msg;
+	}
+ }

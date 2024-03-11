@@ -1,0 +1,26 @@
+package com.jbk.Employee.Controller;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.jbk.Employee.Service.EmployeeSer;
+import com.jbk.Employee.entity.Employee;
+
+@RestController
+@RequestMapping("/empApi")
+public class EmployeeCon {
+	
+	@Autowired
+	EmployeeSer service;
+	
+	@PostMapping("/savedata")
+	public String savedata(@RequestBody  Employee emp) {
+		
+		String msg=service.insertdata(emp);
+		return msg;
+	}
+
+}

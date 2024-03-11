@@ -1,0 +1,27 @@
+package com.jbk.HomeWorkSpring.Dao;
+
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Repository;
+
+import com.jbk.HomeWorkSpring.enity.Address;
+import com.jbk.HomeWorkSpring.enity.Family;
+
+@Repository
+public class FamilyDao {
+@Autowired
+	
+	SessionFactory factory;
+	
+	public String Insertdata(Family f) {
+		
+	Session session=factory.openSession();
+	session.beginTransaction();
+	session.persist(f);
+	session.getTransaction().commit();
+	session.close();
+	
+		return "save the data";
+
+}

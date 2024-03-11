@@ -1,0 +1,17 @@
+package com.jbk.HomeWorkSpring.enity;
+
+import org.springframework.stereotype.Component;
+
+import jakarta.persistence.Entity;
+
+@Entity
+@Component
+public class Family {
+	
+	int id;
+	int AdharNo;
+	int Passortno;
+	int DrivingLic_No;
+	
+
+}

@@ -1,0 +1,32 @@
+package com.jbk.DemoDataBsae.entity;
+
+import org.hibernate.SessionFactory;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Repository;
+
+import jakarta.websocket.Session;
+
+@Repository
+public class StudentDao {
+
+@Repository
+public class PersonDao {
+	@Autowired
+	SessionFactory factory;
+	
+	public String insertData(Student s) {
+		
+	org.hibernate.Session session=factory.openSession();
+	
+	session.beginTransaction();
+	session.persist(s);
+	session.getTransaction().commit();
+	session.close();
+			
+			return "Record is Saved";
+		
+		
+	 
+	}	}
+
+}

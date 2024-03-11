@@ -1,0 +1,22 @@
+package com.jbk.DemoDataBsae.entity;
+
+import org.hibernate.SessionFactory;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Repository;
+
+import jakarta.websocket.Session;
+
+@Repository
+public class StudentDao {
+	
+	@Autowired
+	
+	SessionFactory factory;
+	
+	public void insertdata(StudentDao s) {
+	 Session session=factory.openSession();
+	 
+	 
+;	}
+
+}

@@ -1,0 +1,5 @@
+package com.jbk.BookStore.Dao;
+
+public class BookStoreDao {
+
+}

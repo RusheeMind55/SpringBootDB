@@ -1,0 +1,13 @@
+package com.jbk.BasicController;
+
+import org.springframework.web.bind.annotation.PostMapping;
+
+public class EmployeeController {
+	
+	@PostMapping("/saveEmp")
+	public String SaveRecord() {
+		
+		return "Record are save";
+	}
+
+}

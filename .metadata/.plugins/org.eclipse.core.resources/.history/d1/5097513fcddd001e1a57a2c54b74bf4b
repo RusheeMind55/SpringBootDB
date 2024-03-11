@@ -1,0 +1,19 @@
+package com.jbk.HomeWorkSpring.Dao;
+
+import org.hibernate.SessionFactory;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Repository;
+
+@Repository
+public class EmployeeDao {
+	
+	@Autowired
+	
+	SessionFactory factory;
+	
+	public String Insertdata(Employee Emp) {
+		
+		
+	}
+
+}

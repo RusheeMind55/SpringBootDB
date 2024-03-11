@@ -1,0 +1,30 @@
+package com.jbk.BookStore.Dao;
+
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Repository;
+
+import com.jbk.BookStore.entity.BookStore;
+
+@Repository
+public class BookStoreDao {
+	
+	@Autowired
+	
+	SessionFactory factory;
+	
+	public String insertdata(BookStore BS) {
+		
+	Session session=	factory.openSession();
+		session.beginTransaction();
+		session.getTransaction().commit();
+		session.close();
+		return "save data";
+		
+		
+	}
+	
+	
+
+}

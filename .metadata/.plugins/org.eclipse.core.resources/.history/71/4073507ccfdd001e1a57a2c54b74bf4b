@@ -1,0 +1,9 @@
+package com.jbk.HomeWorkSpring.enity;
+
+public class Counrty {
+	
+	int c_id;
+	String c_name;
+	
+
+}

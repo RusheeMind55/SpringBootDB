@@ -1,0 +1,7 @@
+package com.jbk.DemoDataBsae.Controller;
+
+@
+public class Controller {
+
+	sessionFactory factory;
+}

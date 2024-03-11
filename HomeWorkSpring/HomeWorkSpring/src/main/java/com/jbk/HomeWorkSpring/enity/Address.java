@@ -1,0 +1,53 @@
+package com.jbk.HomeWorkSpring.enity;
+
+import org.springframework.stereotype.Component;
+
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
+
+@Component
+@Entity
+public class Address {
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	int id;
+	String Area;
+	String City;
+	
+	public Address() {
+		
+	}
+	
+	public Address(int id, String area, String city) {
+		super();
+		this.id = id;
+		Area = area;
+		City = city;
+	}
+	public int getId() {
+		return id;
+	}
+	public void setId(int id) {
+		this.id = id;
+	}
+	public String getArea() {
+		return Area;
+	}
+	public void setArea(String area) {
+		Area = area;
+	}
+	public String getCity() {
+		return City;
+	}
+	public void setCity(String city) {
+		City = city;
+	}
+	@Override
+	public String toString() {
+		return "Address [id=" + id + ", Area=" + Area + ", City=" + City + "]";
+	}
+	
+
+}

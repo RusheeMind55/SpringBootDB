@@ -1,0 +1,11 @@
+package com.jbk.HomeWorkSpring.Controller;
+
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+@RequestMapping("/c_Api")
+public class CountrySer {
+
+	
+}

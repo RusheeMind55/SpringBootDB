@@ -1,0 +1,5 @@
+package com.jbk.Employee.entity;
+
+public class Employee {
+
+}

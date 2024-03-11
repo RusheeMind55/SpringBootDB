@@ -1,0 +1,18 @@
+package com.jbk.Employee.Dao;
+
+import org.hibernate.SessionFactory;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Repository;
+
+import com.jbk.Employee.entity.Employee;
+
+@Repository
+public class EmployeeDao {
+	
+	@Autowired
+	SessionFactory factory;
+	
+	
+
+	}
+

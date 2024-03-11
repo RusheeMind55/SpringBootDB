@@ -1,0 +1,5 @@
+package com.jbk.DemoDataBsae.entity;
+
+public class Student {
+
+}

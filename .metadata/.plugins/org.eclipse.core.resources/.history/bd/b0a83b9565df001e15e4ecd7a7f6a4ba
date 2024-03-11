@@ -1,0 +1,19 @@
+package com.jbk.BookStore.Controller;
+
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+import com.jbk.BookStore.Service.BookStoreSer;
+
+@RestController
+@RequestMapping
+public class BookStoreCon {
+
+	BookStoreSer service;
+	
+	public String Savedata(BookStore BS) {
+	
+		String msg=service.
+				return "";
+	}
+ }

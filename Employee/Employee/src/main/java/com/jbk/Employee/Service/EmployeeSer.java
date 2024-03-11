@@ -1,0 +1,20 @@
+package com.jbk.Employee.Service;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.jbk.Employee.Dao.EmployeeDao;
+import com.jbk.Employee.entity.Employee;
+
+@Service
+public class EmployeeSer {
+	@Autowired
+	EmployeeDao dao;
+	
+	public String insertdata(Employee Emp) {
+		String msg=dao.insertadata(Emp);
+		
+		return msg;
+	
+	}
+}

@@ -1,0 +1,8 @@
+package com.jbk.Basic;
+
+public class Employee {
+	
+	int id;
+	String name;
+
+}

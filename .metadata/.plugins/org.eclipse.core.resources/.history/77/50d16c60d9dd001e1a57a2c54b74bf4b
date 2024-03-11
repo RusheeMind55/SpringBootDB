@@ -1,0 +1,21 @@
+package com.jbk.HomeWorkSpring.Service;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+import com.jbk.HomeWorkSpring.Dao.StudentDao;
+import com.jbk.HomeWorkSpring.enity.Student;
+
+@Service
+public class StudentSer {
+	@Autowired
+	StudentDao dao;
+	
+	public String Insertdata(Student s) {
+	
+		String msg= dao.Insertdata(s);
+		
+		return msg;
+		
+
+}
+}

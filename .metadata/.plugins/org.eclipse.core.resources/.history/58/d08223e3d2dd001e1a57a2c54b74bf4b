@@ -1,0 +1,18 @@
+package com.jbk.HomeWorkSpring;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+import com.jbk.HomeWorkSpring.enity.Counrty;
+
+@SpringBootApplication
+public class HomeWorkSpringApplication {
+
+	public static void main(String[] args) {
+		SpringApplication.run(HomeWorkSpringApplication.class, args);
+		System.out.println("Started Application");
+		
+		
+	}
+
+}

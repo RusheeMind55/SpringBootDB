@@ -1,0 +1,10 @@
+package com.jbk.BasicController;
+
+public class EmployeeController {
+	
+	public String SaveRecord() {
+		
+		return "Record are save";
+	}
+
+}
